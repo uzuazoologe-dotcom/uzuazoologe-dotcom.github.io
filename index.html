@@ -12,9 +12,9 @@
 
   <meta name="theme-color" content="#101010">
 
-  <meta name="description" content="FreshCut Barber Shop in Delta State, Nigeria. Clean cuts, affordable grooming and home-service bookings.">
+  <meta name="description" content="FreshCut Barber Shop in Isoko South, Delta State, Nigeria. Quality haircuts, grooming and home-service bookings.">
 
-  <title>FreshCut Barber Shop | Delta State</title>
+  <title>FreshCut Barber Shop | Isoko South</title>
 
   <style>
 
@@ -32,7 +32,7 @@
 
       scroll-behavior: smooth;
 
-      scroll-padding-top: 90px;
+      scroll-padding-top: 110px;
 
     }
 
@@ -93,6 +93,8 @@
       font-size: 24px;
 
       font-weight: bold;
+
+      white-space: nowrap;
 
     }
 
@@ -206,6 +208,8 @@
 
       transition: 0.2s;
 
+      border: none;
+
     }
 
     .btn:hover {
@@ -278,6 +282,8 @@
 
       transition: 0.2s;
 
+      min-width: 0;
+
     }
 
     .service-card:hover,
@@ -322,13 +328,15 @@
 
       font-weight: bold;
 
-    }
+      color: #fff;
 
-    /* IMAGE GALLERY */
+    }
 
     #gallery,
 
-    #business-info {
+    #business-info,
+
+    #contact {
 
       background: #151515;
 
@@ -387,8 +395,6 @@
       text-align: center;
 
     }
-
-    /* BUSINESS INFORMATION */
 
     .info-card {
 
@@ -474,8 +480,6 @@
 
       text-align: center;
 
-      background: #151515;
-
     }
 
     #contact p {
@@ -542,13 +546,43 @@
 
     }
 
-    /* MOBILE PHONE LAYOUT */
+    @media (max-width: 850px) {
 
-    @media (max-width: 700px) {
+      .services-grid,
+
+      .why-grid,
+
+      .gallery-grid,
+
+      .info-grid {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      }
+
+      header {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+
+      }
+
+      nav {
+
+        gap: 12px;
+
+      }
+
+    }
+
+    @media (max-width: 600px) {
 
       header {
 
         padding: 14px 5%;
+
+        gap: 10px;
 
       }
 
@@ -560,7 +594,9 @@
 
       nav {
 
-        gap: 12px;
+        width: 100%;
+
+        gap: 10px 14px;
 
       }
 
@@ -573,6 +609,8 @@
       .hero {
 
         padding: 45px 5%;
+
+        gap: 25px;
 
       }
 
@@ -614,6 +652,22 @@
 
       }
 
+      .service-card,
+
+      .why-card,
+
+      .info-card {
+
+        padding: 20px;
+
+      }
+
+      footer {
+
+        padding: 22px 5%;
+
+      }
+
     }
 
   </style>
@@ -626,7 +680,7 @@
 
     <div class="logo">FreshCut ✂</div>
 
-    <nav>
+    <nav aria-label="Main navigation">
 
       <a href="#services">Services</a>
 
@@ -643,8 +697,6 @@
   </header>
 
   <main>
-
-    <!-- HERO SECTION -->
 
     <section class="hero">
 
@@ -679,8 +731,6 @@
       <img src="IMG_2834.jpeg" alt="FreshCut Barber Shop">
 
     </section>
-
-    <!-- SERVICES -->
 
     <section id="services">
 
@@ -727,8 +777,6 @@
       </div>
 
     </section>
-
-    <!-- IMAGE GALLERY -->
 
     <section id="gallery">
 
@@ -788,8 +836,6 @@
 
     </section>
 
-    <!-- WHY CHOOSE US -->
-
     <section id="why-us">
 
       <div class="section-title">
@@ -804,7 +850,7 @@
 
         <div class="why-card">
 
-          <h3>Clean & Neat</h3>
+          <h3>Clean &amp; Neat</h3>
 
           <p>We care about clean cuts and a tidy finish.</p>
 
@@ -830,8 +876,6 @@
 
     </section>
 
-    <!-- OPENING HOURS, LOCATION AND CONTACT -->
-
     <section id="business-info">
 
       <div class="section-title">
@@ -843,8 +887,6 @@
       </div>
 
       <div class="info-grid">
-
-        <!-- EXAMPLE OPENING HOURS: CHANGE TO YOUR REAL HOURS -->
 
         <div class="info-card">
 
@@ -872,13 +914,11 @@
 
           <p class="notice">
 
-            Example schedule. Please confirm these hours before publishing them as final.
+            Example schedule. Confirm the actual hours before treating these as final.
 
           </p>
 
         </div>
-
-        <!-- LOCATION -->
 
         <div class="info-card">
 
@@ -886,7 +926,7 @@
 
           <h3>Our Location</h3>
 
-          <p>Delta State, Nigeria</p>
+          <p>Isoko South, Delta State, Nigeria</p>
 
           <p>
 
@@ -898,19 +938,17 @@
 
           <a
 
-            href="https://www.google.com/maps/search/?api=1&query=Delta+State+Nigeria"
+            href="https://www.google.com/maps/search/?api=1&query=Isoko+South+Delta+State+Nigeria"
 
             target="_blank"
 
             rel="noopener noreferrer">
 
-            View Delta State on Google Maps
+            View Isoko South on Google Maps
 
           </a>
 
         </div>
-
-        <!-- CONTACT DETAILS -->
 
         <div class="info-card">
 
@@ -951,8 +989,6 @@
           </a>
 
         </div>
-
-        <!-- HOME SERVICE -->
 
         <div class="info-card home-service">
 
@@ -996,8 +1032,6 @@
 
     </section>
 
-    <!-- BOOKING -->
-
     <section id="contact">
 
       <div class="section-title">
@@ -1030,11 +1064,9 @@
 
     <p>© 2026 FreshCut Barber Shop. All rights reserved.</p>
 
-    <p>Delta State, Nigeria | Home Service Available</p>
+    <p>Isoko South, Delta State, Nigeria | Home Service Available</p>
 
   </footer>
-
-  <!-- FLOATING WHATSAPP BUTTON -->
 
   <a
 
