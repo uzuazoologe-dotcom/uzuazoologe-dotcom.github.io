@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ologe | My Portfolio</title>
+  <title>FreshCut Barber Shop</title>
 
   <style>
 
@@ -20,7 +20,7 @@
 
       font-family: Arial, sans-serif;
 
-      background: #0f172a;
+      background: #111;
 
       color: white;
 
@@ -30,41 +30,39 @@
 
     header {
 
+      background: #222;
+
       padding: 20px;
 
-      background: #1e293b;
+    }
+
+    header h1 {
+
+      color: #f5b400;
+
+      margin: 0;
 
     }
 
-    header h2 {
+    .hero {
 
-      color: #38bdf8;
+      padding: 70px 20px;
 
-    }
-
-    section {
-
-      padding: 45px 20px;
+      background: #181818;
 
     }
 
-    h1 {
+    .hero h2 {
 
-      font-size: 34px;
-
-    }
-
-    h1 span {
-
-      color: #38bdf8;
+      font-size: 36px;
 
     }
 
-    p {
+    .hero p {
 
-      color: #cbd5e1;
+      color: #ccc;
 
-      line-height: 1.7;
+      line-height: 1.6;
 
     }
 
@@ -72,39 +70,53 @@
 
       display: inline-block;
 
-      background: #38bdf8;
+      background: #f5b400;
 
-      color: #0f172a;
+      color: #111;
 
-      padding: 12px 22px;
-
-      border-radius: 8px;
+      padding: 14px 24px;
 
       text-decoration: none;
 
       font-weight: bold;
 
+      border-radius: 6px;
+
     }
 
-    .card {
+    .services {
 
-      background: #1e293b;
+      padding: 35px 20px;
 
-      margin: 15px auto;
+    }
+
+    .service {
+
+      background: #222;
 
       padding: 20px;
 
-      border-radius: 12px;
+      margin: 15px auto;
 
-      max-width: 400px;
+      max-width: 300px;
+
+      border-radius: 8px;
+
+    }
+
+    .service h3 {
+
+      color: #f5b400;
 
     }
 
     footer {
 
+      background: #222;
+
       padding: 20px;
 
-      background: #1e293b;
+      color: #ccc;
 
     }
 
@@ -116,113 +128,65 @@
 
   <header>
 
-    <h2>OLOGE.</h2>
+    <h1>FRESHCUT</h1>
 
-    <p>My Personal Portfolio</p>
+    <p>BARBER SHOP</p>
 
   </header>
 
-  <section>
+  <section class="hero">
 
-    <h1>Hello, I'm <span>Ologe!</span></h1>
+    <h2>Look Sharp. Feel Fresh.</h2>
 
-    <p>
+    <p>Clean cuts. Fresh styles. Great confidence.</p>
 
-      I'm learning to build beautiful websites
-
-      using HTML and CSS.
-
-    </p>
-
-    
-
-
-
-<a class="button" href="#projects">View My Projects</a>
+    <a class="button" href="#services">Explore Our Services</a>
 
   </section>
 
-  <section id="about">
+  <section class="services" id="services">
 
-    <h2>About Me</h2>
+    <h2>Our Services</h2>
 
-    <p>
+    <div class="service">
 
-      I'm an aspiring web developer who loves
+      <h3>Classic Haircut</h3>
 
-      technology, creativity, and learning new skills.
+      <p>Clean and stylish haircuts for everyday confidence.</p>
 
-    </p>
-
-  </section>
-
-  <section>
-
-    
-
-<section id="projects">
-
-  <h2>My Projects</h2>
-
-  <div class="card">
-
-    <h3>My Personal Portfolio</h3>
-
-    <p>My first website, built with HTML and CSS.</p>
-
-    <a class="button"
-
-       href="https://uzuazoologe-dotcom.github.io/">
-
-       View Website
-
-    </a>
-
-  </div>
-
-  <div class="card">
-
-    <h3>More Projects Coming Soon</h3>
-
-    <p>I'm learning and building new websites.</p>
-
-  </div>
-
-</section>
-
-      <h3>CSS</h3>
-
-      <p>Learning to style beautiful websites.</p>
+      <p>Price: ₦2,000</p>
 
     </div>
 
-    <div class="card">
+    <div class="service">
 
-      <h3>Web Design</h3>
+      <h3>Beard Trim</h3>
 
-      <p>Building my first website projects.</p>
+      <p>Keep your beard neat and looking fresh.</p>
+
+      <p>Price: ₦1,000</p>
 
     </div>
 
-  </section>
+    <div class="service">
 
-  <section>
+      <h3>Haircut + Beard</h3>
 
-    <h2>Contact Me</h2>
+      <p>A complete fresh look from head to chin.</p>
 
-    <p>Interested in working with me? Let's connect!</p>
+      <p>Price: ₦2,500</p>
 
-    <a class="button" href="mailto:your@email.com">
-
-      Email Me
-
-    </a>
+    </div>
 
   </section>
 
   <footer>
 
-    <p>© 2026 Ologe. Built with HTML & CSS.</p>
+    <h3>Visit FreshCut</h3>
+
+    <p>Contact us to book your next haircut.</p>
+
+    <p>© 2026 FreshCut Barber Shop</p>
 
   </footer>
 
