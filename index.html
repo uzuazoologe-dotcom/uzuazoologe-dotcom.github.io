@@ -12,9 +12,9 @@
 
   <meta name="theme-color" content="#101010">
 
-  <meta name="description" content="FreshCut Barber Shop — clean cuts, fresh styles and great confidence.">
+  <meta name="description" content="FreshCut Barber Shop in Delta State, Nigeria. Clean cuts, affordable grooming and home-service bookings.">
 
-  <title>FreshCut Barber Shop</title>
+  <title>FreshCut Barber Shop | Delta State</title>
 
   <style>
 
@@ -32,19 +32,7 @@
 
       scroll-behavior: smooth;
 
-      scroll-padding-top: 80px;
-
-    }
-
-    body {
-
-      font-family: Arial, sans-serif;
-
-      background: #101010;
-
-      color: #fff;
-
-      line-height: 1.6;
+      scroll-padding-top: 90px;
 
     }
 
@@ -57,6 +45,18 @@
       --card: #1b1b1b;
 
       --muted: #c4c4c4;
+
+    }
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+      background: var(--dark);
+
+      color: #fff;
+
+      line-height: 1.6;
 
     }
 
@@ -100,7 +100,7 @@
 
       display: flex;
 
-      gap: 18px;
+      gap: 16px;
 
       flex-wrap: wrap;
 
@@ -246,7 +246,13 @@
 
     }
 
-    .services-grid {
+    .services-grid,
+
+    .why-grid,
+
+    .gallery-grid,
+
+    .info-grid {
 
       display: grid;
 
@@ -256,11 +262,15 @@
 
     }
 
-    .service-card {
+    .service-card,
+
+    .why-card,
+
+    .info-card {
 
       background: var(--card);
 
-      padding: 25px;
+      padding: 24px;
 
       border: 1px solid #333;
 
@@ -270,15 +280,23 @@
 
     }
 
-    .service-card:hover {
+    .service-card:hover,
+
+    .why-card:hover,
+
+    .info-card:hover {
 
       border-color: var(--gold);
 
-      transform: translateY(-4px);
+      transform: translateY(-3px);
 
     }
 
-    .service-card h3 {
+    .service-card h3,
+
+    .why-card h3,
+
+    .info-card h3 {
 
       color: var(--gold);
 
@@ -286,11 +304,15 @@
 
     }
 
-    .service-card p {
+    .service-card p,
+
+    .why-card p,
+
+    .info-card p {
 
       color: var(--muted);
 
-      margin-bottom: 12px;
+      margin-bottom: 10px;
 
     }
 
@@ -302,21 +324,13 @@
 
     }
 
-    /* LESSON 8: IMAGE GALLERY */
+    /* IMAGE GALLERY */
 
-    #gallery {
+    #gallery,
+
+    #business-info {
 
       background: #151515;
-
-    }
-
-    .gallery-grid {
-
-      display: grid;
-
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-
-      gap: 18px;
 
     }
 
@@ -374,41 +388,85 @@
 
     }
 
-    .why-grid {
+    /* BUSINESS INFORMATION */
 
-      display: grid;
+    .info-card {
 
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-
-      gap: 22px;
+      height: 100%;
 
     }
 
-    .why-card {
+    .info-icon {
 
-      background: var(--card);
-
-      border-radius: 10px;
-
-      padding: 22px;
-
-      text-align: center;
-
-      border: 1px solid #333;
-
-    }
-
-    .why-card h3 {
-
-      color: var(--gold);
+      font-size: 28px;
 
       margin-bottom: 8px;
 
     }
 
-    .why-card p {
+    .info-card a:not(.btn) {
 
-      color: var(--muted);
+      color: var(--gold);
+
+      text-decoration: none;
+
+      overflow-wrap: anywhere;
+
+    }
+
+    .info-card a:hover {
+
+      text-decoration: underline;
+
+    }
+
+    .hours-list {
+
+      list-style: none;
+
+    }
+
+    .hours-list li {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 10px;
+
+      padding: 7px 0;
+
+      border-bottom: 1px solid #333;
+
+      font-size: 14px;
+
+    }
+
+    .hours-list li span:last-child {
+
+      text-align: right;
+
+    }
+
+    .notice {
+
+      color: #e8ce78 !important;
+
+      font-size: 12px;
+
+      margin-top: 12px;
+
+    }
+
+    .home-service {
+
+      border-color: var(--gold);
+
+    }
+
+    .home-service .btn {
+
+      margin-top: 8px;
 
     }
 
@@ -534,15 +592,11 @@
 
       .services-grid,
 
-      .why-grid {
+      .why-grid,
 
-        grid-template-columns: 1fr;
+      .gallery-grid,
 
-      }
-
-      /* Gallery becomes one picture per row on phones */
-
-      .gallery-grid {
+      .info-grid {
 
         grid-template-columns: 1fr;
 
@@ -580,6 +634,8 @@
 
       <a href="#why-us">Why Us</a>
 
+      <a href="#business-info">Visit Us</a>
+
       <a href="#contact">Book Now</a>
 
     </nav>
@@ -587,6 +643,8 @@
   </header>
 
   <main>
+
+    <!-- HERO SECTION -->
 
     <section class="hero">
 
@@ -618,15 +676,11 @@
 
       </div>
 
-      <img
-
-        src="IMG_2834.jpeg"
-
-        alt="FreshCut Barber Shop"
-
-      >
+      <img src="IMG_2834.jpeg" alt="FreshCut Barber Shop">
 
     </section>
+
+    <!-- SERVICES -->
 
     <section id="services">
 
@@ -674,7 +728,7 @@
 
     </section>
 
-    <!-- LESSON 8: OUR GALLERY -->
+    <!-- IMAGE GALLERY -->
 
     <section id="gallery">
 
@@ -696,9 +750,7 @@
 
             alt="Barber shop and grooming style"
 
-            loading="lazy"
-
-          >
+            loading="lazy">
 
           <div class="gallery-caption">Fresh Style</div>
 
@@ -712,9 +764,7 @@
 
             alt="Barber working on a haircut"
 
-            loading="lazy"
-
-          >
+            loading="lazy">
 
           <div class="gallery-caption">Clean Haircut</div>
 
@@ -728,9 +778,7 @@
 
             alt="Men's grooming and barbering"
 
-            loading="lazy"
-
-          >
+            loading="lazy">
 
           <div class="gallery-caption">Sharp Look</div>
 
@@ -739,6 +787,8 @@
       </div>
 
     </section>
+
+    <!-- WHY CHOOSE US -->
 
     <section id="why-us">
 
@@ -780,13 +830,181 @@
 
     </section>
 
+    <!-- OPENING HOURS, LOCATION AND CONTACT -->
+
+    <section id="business-info">
+
+      <div class="section-title">
+
+        <h2>Visit FreshCut</h2>
+
+        <p>Shop visits and home-service bookings available.</p>
+
+      </div>
+
+      <div class="info-grid">
+
+        <!-- EXAMPLE OPENING HOURS: CHANGE TO YOUR REAL HOURS -->
+
+        <div class="info-card">
+
+          <div class="info-icon">🕒</div>
+
+          <h3>Opening Hours</h3>
+
+          <ul class="hours-list">
+
+            <li><span>Monday</span><span>9am – 7pm</span></li>
+
+            <li><span>Tuesday</span><span>9am – 7pm</span></li>
+
+            <li><span>Wednesday</span><span>9am – 7pm</span></li>
+
+            <li><span>Thursday</span><span>9am – 7pm</span></li>
+
+            <li><span>Friday</span><span>9am – 7pm</span></li>
+
+            <li><span>Saturday</span><span>9am – 8pm</span></li>
+
+            <li><span>Sunday</span><span>Closed</span></li>
+
+          </ul>
+
+          <p class="notice">
+
+            Example schedule. Please confirm these hours before publishing them as final.
+
+          </p>
+
+        </div>
+
+        <!-- LOCATION -->
+
+        <div class="info-card">
+
+          <div class="info-icon">📍</div>
+
+          <h3>Our Location</h3>
+
+          <p>Delta State, Nigeria</p>
+
+          <p>
+
+            Contact us to confirm the exact shop address
+
+            and service availability in your area.
+
+          </p>
+
+          <a
+
+            href="https://www.google.com/maps/search/?api=1&query=Delta+State+Nigeria"
+
+            target="_blank"
+
+            rel="noopener noreferrer">
+
+            View Delta State on Google Maps
+
+          </a>
+
+        </div>
+
+        <!-- CONTACT DETAILS -->
+
+        <div class="info-card">
+
+          <div class="info-icon">📞</div>
+
+          <h3>Contact FreshCut</h3>
+
+          <p>Questions or ready to book your haircut?</p>
+
+          <p>
+
+            WhatsApp:
+
+            <a
+
+              href="https://wa.me/2348061721986"
+
+              target="_blank"
+
+              rel="noopener noreferrer">
+
+              +234 806 172 1986
+
+            </a>
+
+          </p>
+
+          <a
+
+            href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20make%20an%20enquiry."
+
+            target="_blank"
+
+            rel="noopener noreferrer">
+
+            Message Us on WhatsApp
+
+          </a>
+
+        </div>
+
+        <!-- HOME SERVICE -->
+
+        <div class="info-card home-service">
+
+          <div class="info-icon">🏠</div>
+
+          <h3>Home Service Available</h3>
+
+          <p>
+
+            Enjoy a fresh haircut from the comfort of your
+
+            home. Contact us to arrange your appointment.
+
+          </p>
+
+          <p>
+
+            Available by arrangement in service areas
+
+            within Delta State.
+
+          </p>
+
+          <a
+
+            class="btn"
+
+            href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20home%20service.%20Please%20tell%20me%20your%20availability%20and%20price."
+
+            target="_blank"
+
+            rel="noopener noreferrer">
+
+            Book Home Service
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- BOOKING -->
+
     <section id="contact">
 
       <div class="section-title">
 
         <h2>Ready for a Fresh Cut?</h2>
 
-        <p>Send us a message and book your next appointment.</p>
+        <p>Visit us or book a home-service appointment on WhatsApp.</p>
 
       </div>
 
@@ -812,7 +1030,11 @@
 
     <p>© 2026 FreshCut Barber Shop. All rights reserved.</p>
 
+    <p>Delta State, Nigeria | Home Service Available</p>
+
   </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
 
   <a
 
