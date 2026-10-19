@@ -1,264 +1,445 @@
 
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#101010">
+
+  <meta name="description" content="FreshCut Barber Shop — clean cuts, fresh styles and great confidence.">
+
   <title>FreshCut | Modern Barber Shop</title>
 
   <style>
+
     * {
+
       box-sizing: border-box;
+
       margin: 0;
+
       padding: 0;
+
     }
 
     html {
+
       scroll-behavior: smooth;
+
     }
 
     body {
+
       font-family: Arial, sans-serif;
+
       background: #101010;
+
       color: #ffffff;
+
       line-height: 1.6;
+
     }
 
     :root {
+
       --gold: #f5b400;
+
       --dark: #101010;
+
       --card: #1c1c1c;
+
       --muted: #bdbdbd;
+
     }
 
-    /* Navigation bar */
+    /* Navigation */
+
     header {
+
       background: #181818;
+
       border-bottom: 1px solid #333;
+
       padding: 18px 7%;
+
     }
 
     nav {
+
       display: flex;
+
       justify-content: space-between;
+
       align-items: center;
+
       gap: 16px;
+
     }
 
     .logo {
+
       color: var(--gold);
+
       font-size: 24px;
+
       font-weight: bold;
+
       letter-spacing: 2px;
+
     }
 
     nav a {
+
       color: white;
+
       text-decoration: none;
+
       font-size: 14px;
+
     }
 
     nav a:hover {
+
       color: var(--gold);
+
     }
 
-    /* Main hero section */
+    /* Hero section */
+
     .hero {
+
       min-height: 420px;
+
       padding: 65px 7%;
+
       display: flex;
+
       flex-direction: column;
+
       justify-content: center;
+
       align-items: flex-start;
+
       background: linear-gradient(120deg, #202020, #101010);
+
     }
 
-    /* Barber shop photo */
     .hero-photo {
+
       display: block;
+
       width: 100%;
+
       max-width: 650px;
+
       height: 280px;
+
       object-fit: cover;
+
       object-position: center;
+
       border-radius: 12px;
+
       margin-bottom: 25px;
+
       border: 1px solid #444;
+
     }
 
     .tag {
+
       color: var(--gold);
+
       text-transform: uppercase;
+
       letter-spacing: 3px;
+
       font-size: 12px;
+
       font-weight: bold;
+
     }
 
     .hero h1 {
+
       font-size: clamp(36px, 7vw, 64px);
+
       line-height: 1.1;
+
       margin: 18px 0;
+
       max-width: 650px;
+
     }
 
     .hero p {
+
       color: var(--muted);
+
       max-width: 470px;
+
       margin-bottom: 28px;
+
     }
 
+    /* Buttons */
+
     .button {
+
       display: inline-block;
+
       background: var(--gold);
+
       color: #111;
+
       padding: 13px 22px;
+
       border-radius: 5px;
+
       text-decoration: none;
+
       font-weight: bold;
+
       transition: 0.2s;
+
     }
 
     .button:hover {
+
       background: white;
+
       transform: translateY(-2px);
+
     }
 
-    /* Services section */
+    /* Services */
+
     .services {
+
       padding: 70px 7%;
+
       text-align: center;
+
     }
 
     .section-title {
+
       font-size: 32px;
+
       margin-bottom: 10px;
+
     }
 
     .intro {
+
       color: var(--muted);
+
       margin-bottom: 35px;
+
     }
 
     .service-grid {
+
       display: grid;
+
       grid-template-columns: repeat(3, minmax(0, 1fr));
+
       gap: 20px;
+
     }
 
     .service {
+
       background: var(--card);
+
       padding: 28px 20px;
+
       border: 1px solid #303030;
+
       border-radius: 10px;
+
       transition: 0.2s;
+
     }
 
     .service:hover {
+
       border-color: var(--gold);
+
       transform: translateY(-5px);
+
     }
 
     .service .number {
+
       color: var(--gold);
+
       font-size: 13px;
+
       font-weight: bold;
+
     }
 
     .service h3 {
+
       margin: 12px 0;
+
       font-size: 21px;
+
     }
 
     .service p {
+
       color: var(--muted);
+
       font-size: 14px;
+
     }
 
     .price {
+
       display: block;
+
       color: var(--gold);
+
       font-size: 22px;
+
       margin-top: 18px;
+
       font-weight: bold;
+
     }
 
-    /* Contact section */
+    /* Contact */
+
     .contact {
+
       padding: 60px 7%;
+
       text-align: center;
+
       background: #1c1c1c;
+
     }
 
     .contact p {
+
       color: var(--muted);
+
       margin: 12px 0 24px;
+
     }
 
     footer {
+
       text-align: center;
+
       padding: 24px 15px;
+
       color: var(--muted);
+
       font-size: 13px;
+
     }
 
-    /* Responsive design for phones */
+    /* Phone layout */
+
     @media (max-width: 700px) {
+
       header {
+
         padding: 16px 5%;
+
       }
 
       .logo {
+
         font-size: 21px;
+
       }
 
       .hero {
+
         min-height: 360px;
+
         padding: 45px 6%;
+
       }
 
       .hero-photo {
+
         height: 210px;
+
       }
 
       .hero h1 {
+
         font-size: 40px;
+
       }
 
       .services {
+
         padding: 50px 6%;
+
       }
 
       .service-grid {
+
         grid-template-columns: 1fr;
+
       }
 
       .service {
+
         padding: 24px 18px;
+
       }
 
       .section-title {
+
         font-size: 28px;
+
       }
+
     }
+
   </style>
+
 </head>
 
 <body>
+
   <header>
+
     <nav>
+
       <div class="logo">FRESHCUT.</div>
+
       <a href="#services">Our Services ↓</a>
+
     </nav>
+
   </header>
 
   <main>
+
     <section class="hero">
 
-      <!-- Barber shop photo -->
       <img
+
         src="IMG_2834.jpeg"
+
         alt="FreshCut Barber Shop"
+
         class="hero-photo"
+
       >
 
       <span class="tag">Your style, our passion</span>
@@ -266,65 +447,113 @@
       <h1>Look Sharp.<br>Feel Fresh.</h1>
 
       <p>
+
         Clean cuts. Fresh styles. Great confidence.
+
         Get the look you deserve at FreshCut Barber Shop.
+
       </p>
 
       <a class="button" href="#services">
+
         Explore Our Services
+
       </a>
+
     </section>
 
     <section class="services" id="services">
+
       <span class="tag">What we offer</span>
 
       <h2 class="section-title">Our Services</h2>
 
       <p class="intro">
+
         Find your style. Leave looking fresh.
+
       </p>
 
       <div class="service-grid">
+
         <div class="service">
+
           <span class="number">01 / HAIRCUT</span>
+
           <h3>Classic Haircut</h3>
+
           <p>Clean, stylish cuts for everyday confidence.</p>
+
           <span class="price">₦2,000</span>
+
         </div>
 
         <div class="service">
+
           <span class="number">02 / GROOMING</span>
+
           <h3>Beard Trim</h3>
+
           <p>Keep your beard neat, sharp and well-groomed.</p>
+
           <span class="price">₦1,000</span>
+
         </div>
 
         <div class="service">
+
           <span class="number">03 / COMPLETE LOOK</span>
+
           <h3>Haircut + Beard</h3>
+
           <p>Get a complete fresh look in one visit.</p>
+
           <span class="price">₦2,500</span>
+
         </div>
+
       </div>
+
     </section>
 
     <section class="contact" id="contact">
+
       <span class="tag">Your next fresh look</span>
 
       <h2 class="section-title">Ready for a Fresh Cut?</h2>
 
       <p>
+
         Contact us to ask about appointments and availability.
+
       </p>
 
-      <a class="button" href="mailto:your@email.com">
-        Contact Us
+      <a
+
+        class="button"
+
+        href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20haircut."
+
+        target="_blank"
+
+        rel="noopener noreferrer"
+
+      >
+
+        Book on WhatsApp
+
       </a>
+
     </section>
+
   </main>
 
   <footer>
-    <p>© 2026 FreshCut Barber Shop. Built with HTML & CSS.</p>
+
+    <p>© 2026 FreshCut Barber Shop. Built with HTML &amp; CSS.</p>
+
   </footer>
+
 </body>
+
 </html>
