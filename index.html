@@ -263,6 +263,32 @@
       font-size: 13px;
     }
 
+    /* Floating WhatsApp button */
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 15px #00000070;
+      z-index: 999;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .floating-whatsapp:hover {
+      background: #1ebe5d;
+      transform: scale(1.08);
+    }
+
     @media (max-width: 700px) {
       header {
         padding: 16px 5%;
@@ -321,6 +347,13 @@
 
       .section-title {
         font-size: 28px;
+      }
+
+      .floating-whatsapp {
+        right: 15px;
+        bottom: 15px;
+        width: 54px;
+        height: 54px;
       }
     }
   </style>
@@ -435,5 +468,15 @@
   <footer>
     <p>© 2026 FreshCut Barber Shop. Built with HTML &amp; CSS.</p>
   </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a
+    href="https://wa.me/2348061721986?text=Hello%20FreshCut%2C%20I%20want%20to%20book%20a%20haircut."
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Book on WhatsApp"
+    title="Book on WhatsApp"
+  >☏</a>
 </body>
 </html>
